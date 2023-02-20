@@ -36,22 +36,28 @@ arr.push(obj)
 //   console.log("Yngre än 50")
 // }
 
-function add(tal1, tal2) {
+// function add(tal1, tal2) {
+//   return tal1 + tal2
+// }
+
+// // SUmmera alla jämna tal i en array
+// function addEvenNumbers(arr) {
+//   let sumSoFar = 0
+//   for (let i = 0; i < arr.length; i++) {
+//     const element = arr[i]
+//     if (element % 2 === 0) {
+//       // ett jämt tal, lägger till summan
+//       sumSoFar = sumSoFar + element
+//     }
+//   }
+//   return sumSoFar
+// }
+
+// let summa = addEvenNumbers([2, 3, 4, 5, 6, 1000, 7])
+// console.log(summa)
+
+let add = (tal1, tal2) => {
   return tal1 + tal2
 }
 
-// SUmmera alla jämna tal i en array
-function addEvenNumbers(arr) {
-  let sumSoFar = 0
-  for (let i = 0; i < arr.length; i++) {
-    const element = arr[i]
-    if (element % 2 === 0) {
-      // ett jämt tal, lägger till summan
-      sumSoFar = sumSoFar + element
-    }
-  }
-  return sumSoFar
-}
-
-let summa = addEvenNumbers([2, 3, 4, 5, 6, 1000, 7])
-console.log(summa)
+console.log(add(6, 8))
